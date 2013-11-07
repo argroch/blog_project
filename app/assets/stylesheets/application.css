@@ -1,0 +1,111 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+#header{
+	background-color:#00C0FF;
+	color: #ffffff;
+	padding: 1px;
+	margin-left: 3px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+#bloggypic{
+	height:120px;
+	width:120px;
+	/*position:left;*/
+}
+
+#headertable{
+	vertical-align:bottom
+}
+
+#footer{
+	background-color: #353839;
+	color:#00ffff;
+	padding: 14px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+body{
+	margin: 5px;
+	padding: 5px;
+}
+
+.middle{
+	padding: 15px;
+	background-color: #FAF0E6; 
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 10px 10px 10px 10px;
+
+}
+
+.graybody{
+	background-color:#acacac;
+}
+
+a:link {color:#FF4000;} 
+a:visited {color:red;} 
+a:hover {color:##FF8000;}
+a:active {color:white;} 
+
+#td1{
+	/*width:150px;*/
+	text-align:left;
+	vertical-align:bottom;
+}
+
+#td2{
+	width:200px;
+	text-align:center;
+}
+
+table { empty-cells: show; }
+
+img {
+    border-radius: 10px 10px 10px 10px;
+}
+
+h1 {
+	font-family:Book Antiqua;
+}
+
+#georgiahead{
+	font-family:georgia;
+}
+
+#blogtextarea{
+	width: 500px;
+	height: 300px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+#commenttextarea{
+	width: 500px;
+	height: 250px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+#titlearea{
+	width: 400px;
+	border-radius: 4px 4px 4px 4px;
+}
+
+#timetext{
+	font-size:12px;
+}
+
+#editlink{
+	font-size:13px;
+}

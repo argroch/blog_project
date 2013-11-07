@@ -1,0 +1,36 @@
+<br />
+<div id="sidebar">
+  <div id="tagform">
+    <%= render 'tags/form' %>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Tags</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @tags.each do |tag| %>
+        <tr>
+          <td><%= link_to 'x', tag, method: :delete, data: { confirm: 'Really? Think about it.' } %></td>
+          <td><%= tag.name %></td>       
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<h2>We All Make Mistakes</h2>
+
+
+<%= render 'form' %>
+
+
+<br />
+<br />
+<br />
+
+<%= link_to 'View Post', @blog %> | <%= link_to 'View All Posts', yourposts_path %> | 
+<%= link_to 'Blog Index', blogs_path %>

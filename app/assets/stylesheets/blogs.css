@@ -1,0 +1,51 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+#blogdiv{
+	background-color: #E0F2F7;
+	padding: 4px;
+	margin-bottom: 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+#blogdiv a:link {color:#FF4000;} 
+#blogdiv a:visited {color:red;} 
+#blogdiv a:hover {color:#FF8000;}  
+#blogdiv a:active {color:white;} 
+
+#commentdiv{
+	background-color: #FAF0E6;
+	padding: 2px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+#tagging{
+	background-color: #2EFE64;
+	color: #08088A;
+}
+
+#sidebar{
+	padding 5px;
+	background-color: #E0FFFF; 
+	width: 150px;  
+	float: right;
+	border-radius: 10px 10px 10px 10px;
+}
+
+#tagform{
+	text-align: center;
+}
+
+#tagindex{
+	text-align: center;
+	margin:20px 0px 20px 0px;
+	line-height: 175%;
+}
+
+#yptags{
+	text-align: left;
+	margin:20px 0px 20px 0px;
+	line-height: 175%;
+}
