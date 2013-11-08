@@ -42,34 +42,3 @@
 
 <%= link_to 'New Blog', new_blog_path %><br />
 <%= link_to "What Are Your Friends Saying?", following_path %>
-
-<!--
-  Here's what it used to say:
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Content</th>
-      th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @blogs.each do |blog| %>
-      <tr>
-        <td><%= blog.title %></td>
-        <td><%= blog.content %></td>
-        <td><%= link_to 'Show', blog %></td>
-        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-        <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Blog', new_blog_path %>
-
-  -->

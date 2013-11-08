@@ -4,9 +4,9 @@
       <h2><%= pluralize(@tag.errors.count, "error") %> prohibited this tag from being saved:</h2>
 
       <ul>
-      <% @tag.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
+        <% @tag.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
       </ul>
     </div>
   <% end %>

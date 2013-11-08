@@ -1,49 +1,49 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>It's Bloggy, Y'all</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body class="graybody">
-	
-<div id="header">
-	<table>
-		<tr>
-			<td><%= image_tag "blogosphere.png", :id=>"bloggypic", :alt=>"Bloggy's not here, Mrs. Torrance.", :title=>"Bloggy's watching you...", :align=>"left" %></td>
-			<td><h1>Bloggy</h1></td>
-			<td><h3> ...don't be shy: blog about it!</h3></td>
-		</tr>
-	</table>
-	<table>
-		<tr>
-			<td id="td1"><%= link_to "Your Bloggy", yourposts_path %></td>
-			<td width="5"></td>
-			<td id="td1", ><%= link_to "Your Bloggy Friends", following_path %></td>
-		</tr>
-	</table>
-</div>
+	<head>
+	  <title>It's Bloggy, Y'all</title>
+	  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+	  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	  <%= csrf_meta_tags %>
+	</head>
+	<body class="graybody">
+		
+		<div id="header">
+			<table>
+				<tr>
+					<td><%= image_tag "blogosphere.png", :id=>"bloggypic", :alt=>"Bloggy's not here, Mrs. Torrance.", :title=>"Bloggy's watching you...", :align=>"left" %></td>
+					<td><h1>Bloggy</h1></td>
+					<td><h3> ...don't be shy: blog about it!</h3></td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td id="td1"><%= link_to "Your Bloggy", yourposts_path %></td>
+					<td width="5"></td>
+					<td id="td1", ><%= link_to "Your Bloggy Friends", following_path %></td>
+				</tr>
+			</table>
+		</div>
 
-<%= yield %>
+		<%= yield %>
 
-<div id="footer">
-<table>
-	<tr>
-		<td id="td1"><%= link_to "About Us", about_us_path %></td>
-		<td width="15"></td>
-		<td id="td1"><%= link_to "Our Team", our_team_path %></td>
-		<td width="15"></td>
-		<td id="td1"><%= link_to "Contact Us", contact_us_path %></td>
-		<td width="15"></td>
-		<td id="td1"><%= link_to "Terms of Service", tos_path %></td>
-		<td width="15"></td>
-		<td id="td1"><%= link_to "Company Vision", vision_path %></td>
-	</tr>
-</table>
-<br />
-No copyright...but steal my stuff and you're dead meat.
-</div>
+		<div id="footer">
+			<table>
+				<tr>
+					<td id="td1"><%= link_to "About Us", about_us_path %></td>
+					<td width="15"></td>
+					<td id="td1"><%= link_to "Our Team", our_team_path %></td>
+					<td width="15"></td>
+					<td id="td1"><%= link_to "Contact Us", contact_us_path %></td>
+					<td width="15"></td>
+					<td id="td1"><%= link_to "Terms of Service", tos_path %></td>
+					<td width="15"></td>
+					<td id="td1"><%= link_to "Company Vision", vision_path %></td>
+				</tr>
+			</table>
+			<br />
+			No copyright...but steal my stuff and you're dead meat.
+		</div>
 
-</body>
+	</body>
 </html>
