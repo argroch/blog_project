@@ -1,4 +1,4 @@
-<h1>Title of Your Blog</h1>
+<h1>The Amazing Ramblings of Sangamon Saginaw III</h1>
   <% @blogs.each do |blog| %>
     <div id="blogdiv">
       <h2><%= link_to blog.title, blog %></h2>
@@ -13,6 +13,13 @@
       <br />
       <div><%= blog.content %></div>
       <br />
+      <% count = 0 %>
+      <div>
+        <% blog.comments.each do |comment| %>
+          <% count += 1 %>
+        <% end %>
+        <%= link_to 'Comments: ', blog %><%= count %>
+      </div>
       <div><%= link_to 'Edit', edit_blog_path(blog), :id => "editlink" %> | 
         <%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?' }, :id => "editlink" %></div>
     </div>

@@ -8,22 +8,20 @@
 	</head>
 	<body class="graybody">
 		
-		<div id="header">
+		<div>
+			<%= image_tag "blogosphere.png", :id=>"bloggypic", :alt=>"Bloggy's not 
+				here, Mrs. Torrance.", :title=>"Bloggy's watching you...", :align=>"left" %>
 			<table>
 				<tr>
-					<td><%= image_tag "blogosphere.png", :id=>"bloggypic", :alt=>"Bloggy's not here, Mrs. Torrance.", :title=>"Bloggy's watching you...", :align=>"left" %></td>
-					<td><h1>Bloggy</h1></td>
-					<td><h3> ...don't be shy: blog about it!</h3></td>
+					<td id="mcblogstein">Bloggy</td>
+					<td width="14"></td>
+					<td id="tagline">Don't be shy... blog about it!</td>
 				</tr>
 			</table>
-			<table>
-				<tr>
-					<td id="td1"><%= link_to "Your Bloggy", yourposts_path %></td>
-					<td width="5"></td>
-					<td id="td1", ><%= link_to "Your Bloggy Friends", following_path %></td>
-				</tr>
-			</table>
+			<br />
+			<%= link_to "Post Something!", new_blog_path %> | <%= link_to "Your Bloggy", yourposts_path %> | <%= link_to "Your Bloggy Friends", following_path %>
 		</div>
+		<br />
 
 		<%= yield %>
 
