@@ -13,7 +13,10 @@
  */
 
 #header{
-	background-color:#00C0FF;
+	background-image: url('bloggyheader.jpg');
+	/*background-color:#00C0FF;*/
+	height: 180px;
+	width: 990px;
 	color: #ffffff;
 	padding: 1px;
 	margin-left: 3px;

@@ -21,6 +21,9 @@ Bloggy::Application.routes.draw do
   get "company_vision" => "main#company_vision", :as => :vision
 
   get "yourposts" => "blogs#yourposts", :as => :yourposts
+
+  get "testing" => "blogs#testing", :as => :testing
+  
   #get "your-team => "main#our_team"
 
 

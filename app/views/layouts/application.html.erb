@@ -7,6 +7,7 @@
 	  <%= csrf_meta_tags %>
 	</head>
 	<body class="graybody">
+	
 		
 		<div>
 			<%= image_tag "blogosphere.png", :id=>"bloggypic", :alt=>"Bloggy's not 
@@ -21,6 +22,7 @@
 			<br />
 			<%= link_to "Post Something!", new_blog_path %> | <%= link_to "Your Bloggy", yourposts_path %> | <%= link_to "Your Bloggy Friends", following_path %>
 		</div>
+	
 		<br />
 
 		<%= yield %>
