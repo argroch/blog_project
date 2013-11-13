@@ -13,32 +13,35 @@
  */
 
 #header{
-	background-image: url('bloggyheader.jpg');
-	/*background-color:#00C0FF;*/
-	height: 180px;
-	width: 990px;
-	color: #ffffff;
-	padding: 1px;
-	margin-left: 3px;
-	border-radius: 10px 10px 10px 10px;
+	background: url('old_forest.jpg');
+	border-radius: 5px 5px 5px 5px;
+}
+
+#header a:link{color:red;
+	text-shadow: 2px 2px #000000;
+	}
+#header a:visited{color:#81F7F3;
+		text-shadow: 2px 2px #000000;
+}
+#header a:hover{color:white;
+	text-shadow: 2px 2px #000000;
+}
+#header a:active{color:white;
+	text-shadow: 2px 2px #000000;
 }
 
 #mcblogstein{
 	font-size: 400%;
-	color: #3104B4;
+	color: #D0FA58;
 	vertical-align: bottom;
+	text-shadow: 2px 2px #000000;
 }
 
 #tagline{
 	font-size: 24px;
-	color: #B43104;
+	color: #F7D358;
 	vertical-align: bottom;
-}
-
-#bloggypic{
-	height:120px;
-	width:120px;
-	/*position:left;*/
+	text-shadow: 2px 2px #000000;
 }
 
 #headertable{
@@ -53,8 +56,8 @@
 }
 
 body{
-	margin: 5px;
-	padding: 5px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
 .middle{
@@ -70,9 +73,9 @@ body{
 	background-color:#acacac;
 }
 
-a:link {color:#FF4000;} 
+a:link {color:red;} 
 a:visited {color:red;} 
-a:hover {color:##FF8000;}
+a:hover {color:#00FFFF;}
 a:active {color:white;} 
 
 #td1{
