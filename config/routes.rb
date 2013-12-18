@@ -1,4 +1,5 @@
 Bloggy::Application.routes.draw do
+  devise_for :bloggers
   resources :tags
 
   resources :comments
